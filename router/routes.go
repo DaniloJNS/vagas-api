@@ -5,7 +5,8 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func InitRouter(router *gin.Engine) {
+func InitializeRouters(router *gin.Engine) {
+  handler.InitializeHandler()
   v1 := router.Group("api/v1")
   {
     v1.GET("/openings", handler.IndexOpeningHandler)

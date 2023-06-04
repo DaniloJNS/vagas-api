@@ -8,7 +8,7 @@ func Initializer() {
   // define an routes to GET /ping
 
   // Setup routes
-  InitRouter(r)
+  InitializeRouters(r)
 
   // Initialize WEB SERVER
   r.Run(":4000")
